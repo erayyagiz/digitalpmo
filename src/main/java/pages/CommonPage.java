@@ -1,6 +1,8 @@
 package pages;
 
 import com.ey.automation.base.BasePage;
+import com.ey.automation.utilities.ReportListener;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -30,17 +32,20 @@ public class CommonPage extends BasePage {
         }
     }
 
-
+    @Step("Go to About Send Suggestion Page")
     public void goToAboutSendSuggestionPage(){
         try {
+            ReportListener.info("goToAboutSendSuggestionPage is started.");
             LOGGER.info("goToAboutSendSuggestionPage is started.");
             waitUntilElementVisible(aboutMenuButton);
             aboutMenuButton.click();
             waitUntilElementVisible(sendSuggestionsSubMenuButton);
             sendSuggestionsSubMenuButton.click();
             switchFrame();
+            ReportListener.pass("goToAboutSendSuggestionPage is completed.");
             LOGGER.info("goToAboutSendSuggestionPage is completed.");
         }catch (Exception e){
+            ReportListener.fail("goToAboutSendSuggestionPage is not completed.");
             LOGGER.error("goToAboutSendSuggestionPage is not completed. The reason: "+e.getMessage());
             Assert.fail("goToAboutSendSuggestionPage is not completed. The reason: "+e.getMessage());
         }
