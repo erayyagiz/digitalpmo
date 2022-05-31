@@ -3,42 +3,50 @@ package test;
 import base.CustomTestBase;
 import org.testng.annotations.Test;
 
-public class About extends CustomTestBase {
+
+public class AboutTest extends CustomTestBase {
+
+
+    public void _1H_OpenDigitalPMOUserGuide(){
+        loginPage().login();
+        commonPage().goToAboutPage("Help");
+        aboutPage().checkUserGuide();
+    }
 
     @Test
     public void _1SS_SendSuggestionWithoutSuggestionTitle() {
         loginPage().login();
-        commonPage().goToAboutSendSuggestionPage();
+        commonPage().goToAboutPage("Send Suggestion");
         aboutPage().sendSuggestion("","TEST");
         aboutPage().checkWarningMessageSending();
     }
 
-
+    @Test
     public void _2SS_SendSuggestionWithoutContext() {
         loginPage().login();
-        commonPage().goToAboutSendSuggestionPage();
+        commonPage().goToAboutPage("Send Suggestion");
         aboutPage().sendSuggestion("TEST","");
         aboutPage().checkWarningMessageSending();
     }
 
-
+    @Test
     public void _3SS_CheckSuggestionTitleMaximumCharacterCount() {
         loginPage().login();
-        commonPage().goToAboutSendSuggestionPage();
+        commonPage().goToAboutPage("Send Suggestion");
         aboutPage().checkSuggestionTitleMaximumCharacter();
     }
 
-
+    @Test
     public void _4SS_CheckContextMaximumCharacterCount() {
         loginPage().login();
-        commonPage().goToAboutSendSuggestionPage();
+        commonPage().goToAboutPage("Send Suggestion");
         aboutPage().checkContextMaximumCharacter();
     }
 
-
+    @Test
     public void _5SS_SendSuggestion() {
         loginPage().login();
-        commonPage().goToAboutSendSuggestionPage();
+        commonPage().goToAboutPage("Send Suggestion");
         aboutPage().sendSuggestion("TEST","TEST");
         aboutPage().checkSuccessPopupSending();
     }
