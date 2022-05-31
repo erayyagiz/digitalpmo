@@ -1,12 +1,13 @@
 package test;
 
 import base.CustomTestBase;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 
 public class AboutTest extends CustomTestBase {
 
-
+    @Ignore
     public void _1H_OpenDigitalPMOUserGuide(){
         loginPage().login();
         commonPage().goToAboutPage("Help");
