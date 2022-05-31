@@ -3,7 +3,7 @@ package test;
 import base.CustomTestBase;
 import org.testng.annotations.Test;
 
-public class ProjectManagement extends CustomTestBase {
+public class ProjectManagementTest extends CustomTestBase {
 
     @Test
     public void runTest1()  {

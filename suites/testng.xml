@@ -2,7 +2,7 @@
 <suite name="Digital PMO" allow-return-values="true" verbose="1">
     <test name="About Page">
         <classes>
-            <class name="test.About"/>
+            <class name="test.AboutTest"/>
         </classes>
     </test>
 
