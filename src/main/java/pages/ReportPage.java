@@ -1,4 +1,4 @@
 package pages;
 
-public class ReportPage {
+public class ReportPage extends CommonPage {
 }

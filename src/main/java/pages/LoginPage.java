@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends CommonPage {
     private static final Logger LOGGER = LogManager.getLogger(LoginPage.class);
     @FindBy(how = How.XPATH, using="//input[@id='uid']")
     public WebElement username;

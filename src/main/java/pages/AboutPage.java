@@ -1,6 +1,5 @@
 package pages;
 
-import com.ey.automation.base.BasePage;
 import com.ey.automation.utilities.ReportListener;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
@@ -10,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AboutPage extends BasePage {
+public class AboutPage extends CommonPage {
     private static final Logger LOGGER = LogManager.getLogger(AboutPage.class);
     @FindBy(how = How.XPATH, using = "//input[@name='input_1']")
     public WebElement suggestionTitleTextBox;

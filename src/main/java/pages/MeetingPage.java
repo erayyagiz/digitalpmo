@@ -1,4 +1,5 @@
 package pages;
 
-public class MeetingPage {
+
+public class MeetingPage extends CommonPage {
 }
