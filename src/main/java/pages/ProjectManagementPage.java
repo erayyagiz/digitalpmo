@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class ProjectManagementPage extends BasePage {
+public class ProjectManagementPage extends CommonPage {
     @FindBy(how = How.XPATH, using="//input[@title='Enter Project Name' and @name='input_0']")
     public WebElement filterProjectName;
     @FindBy(how = How.XPATH, using="//input[@title='Enter Project Code' and @name='input_1']")

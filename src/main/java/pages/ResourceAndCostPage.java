@@ -1,4 +1,4 @@
 package pages;
 
-public class ResourceAndCostPage {
+public class ResourceAndCostPage extends CommonPage {
 }

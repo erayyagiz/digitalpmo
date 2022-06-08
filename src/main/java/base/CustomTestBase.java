@@ -3,10 +3,7 @@ package base;
 import com.ey.automation.base.Base;
 import com.ey.automation.base.CurrentPageContext;
 import com.ey.automation.base.TestInitialize;
-import pages.AboutPage;
-import pages.CommonPage;
-import pages.LoginPage;
-import pages.ProjectManagementPage;
+import pages.*;
 
 
 public class CustomTestBase extends TestInitialize {

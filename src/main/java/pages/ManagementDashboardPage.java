@@ -1,4 +1,4 @@
 package pages;
 
-public class ManagementDashboardPage {
+public class ManagementDashboardPage extends CommonPage {
 }

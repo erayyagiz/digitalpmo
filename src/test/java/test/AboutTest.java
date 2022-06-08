@@ -4,7 +4,6 @@ import base.CustomTestBase;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-
 public class AboutTest extends CustomTestBase {
 
     @Ignore

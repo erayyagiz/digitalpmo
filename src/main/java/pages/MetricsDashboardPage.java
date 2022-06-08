@@ -1,4 +1,4 @@
 package pages;
 
-public class MetricsDashboardPage {
+public class MetricsDashboardPage extends CommonPage {
 }
