@@ -35,4 +35,39 @@ public class CustomTestBase extends TestInitialize {
         AboutPage aboutPage = CurrentPageContext.getCurrentPage().As(AboutPage.class);
         return aboutPage;
     }
+
+    public MeetingPage meetingPage(){
+        Base base = new Base();
+        CurrentPageContext.setCurrentPage(base.GetInstance(MeetingPage.class));
+        MeetingPage meetingPage = CurrentPageContext.getCurrentPage().As(MeetingPage.class);
+        return meetingPage;
+    }
+
+    public ManagementDashboardPage managementDashboardPage(){
+        Base base = new Base();
+        CurrentPageContext.setCurrentPage(base.GetInstance(ManagementDashboardPage.class));
+        ManagementDashboardPage managementDashboardPage = CurrentPageContext.getCurrentPage().As(ManagementDashboardPage.class);
+        return managementDashboardPage;
+    }
+
+    public MetricsDashboardPage metricsDashboardPage(){
+        Base base = new Base();
+        CurrentPageContext.setCurrentPage(base.GetInstance(MetricsDashboardPage.class));
+        MetricsDashboardPage metricsDashboardPage = CurrentPageContext.getCurrentPage().As(MetricsDashboardPage.class);
+        return metricsDashboardPage;
+    }
+
+    public ReportPage reportPage(){
+        Base base = new Base();
+        CurrentPageContext.setCurrentPage(base.GetInstance(ReportPage.class));
+        ReportPage reportPage = CurrentPageContext.getCurrentPage().As(ReportPage.class);
+        return reportPage;
+    }
+
+    public ResourceAndCostPage resourceAndCostPage(){
+        Base base = new Base();
+        CurrentPageContext.setCurrentPage(base.GetInstance(ResourceAndCostPage.class));
+        ResourceAndCostPage resourceAndCostPage = CurrentPageContext.getCurrentPage().As(ResourceAndCostPage.class);
+        return resourceAndCostPage;
+    }
 }
