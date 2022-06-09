@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 public class AboutTest extends CustomTestBase {
 
+    //1534682
     @Ignore
     public void _1H_OpenDigitalPMOUserGuide(){
         loginPage().login();
@@ -13,6 +14,7 @@ public class AboutTest extends CustomTestBase {
         aboutPage().checkUserGuide();
     }
 
+    //1534685
     @Test
     public void _1SS_SendSuggestionWithoutSuggestionTitle() {
         loginPage().login();
@@ -21,6 +23,7 @@ public class AboutTest extends CustomTestBase {
         aboutPage().checkWarningMessageSending();
     }
 
+    //1534687
     @Test
     public void _2SS_SendSuggestionWithoutContext() {
         loginPage().login();
@@ -29,6 +32,7 @@ public class AboutTest extends CustomTestBase {
         aboutPage().checkWarningMessageSending();
     }
 
+    //1534691
     @Test
     public void _3SS_CheckSuggestionTitleMaximumCharacterCount() {
         loginPage().login();
@@ -36,6 +40,7 @@ public class AboutTest extends CustomTestBase {
         aboutPage().checkSuggestionTitleMaximumCharacter();
     }
 
+    //1534693
     @Test
     public void _4SS_CheckContextMaximumCharacterCount() {
         loginPage().login();
@@ -43,8 +48,9 @@ public class AboutTest extends CustomTestBase {
         aboutPage().checkContextMaximumCharacter();
     }
 
+    //1534697
     @Test
-    public void _5SS_SendSuggestion() {
+    public void _5SS_SendSuggestionWithMandatoryInputs() {
         loginPage().login();
         commonPage().goToAboutPage("Send Suggestion");
         aboutPage().sendSuggestion("TEST","TEST");
