@@ -1,9 +1,9 @@
 package pages;
 
-import com.ey.automation.utilities.ReportListener;
+import com.ey.automation.listener.ReportListener;
 import io.qameta.allure.Step;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
